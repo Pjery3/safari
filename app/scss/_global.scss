@@ -165,5 +165,24 @@ button {
     }
 }
 
+.preview-btn {
+    position: absolute;
+    width: 73px;
+    height: 73px;
+    border-radius: 50%;
+    background-color: #1e1e1e;
+    pointer-events: unset;
+    .preview-triangle {
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 35px;
+        background-color: $gray;
+        clip-path: polygon(0px 0px, 100% 50%, 0% 100%);
+    }
+}
+
 
 
