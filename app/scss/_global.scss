@@ -20,7 +20,14 @@ body {
     font-weight: 500;
     font-family: "Roboto";
 }
-
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    padding: 0;
+}
 h1 {
     font-size: 9rem;
     line-height: 12rem;
@@ -36,13 +43,15 @@ h3 {
     max-width: 1150px;
     padding: 0 15px;
     margin: 0 auto;
-    &-short{
+    &-short {
         max-width: 862px;
     }
 }
 
 a {
     text-decoration: none;
+    display: inline-block;
+    color: #fff;
 }
 
 ul,
@@ -96,7 +105,8 @@ button {
 }
 
 .arrow-scroll {
-    position: relative;
+    position: absolute;
+    content: "";
     width: 40px;
     height: 40px;
     border-radius: 50%;
