@@ -3,6 +3,7 @@
 @import "_global.scss";
 
 $brown: #886239;
+$grayLight: #d9d9de;
 
 .header {
     background-position: top center;
@@ -162,6 +163,61 @@ $brown: #886239;
     }
 
     &__item-text {
+    }
+}
+
+.offers {
+    padding: 100px 0;
+    margin-bottom: 100px;
+    &__title {
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 32px;
+        padding-bottom: 82px;
+        border-bottom: 1px solid $grayLight;
+        color: #fff;
+    }
+
+    &__item {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        min-height: 256px;
+        padding: 16px 21px 19px 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &--big {
+            padding: 16px 59px 19px 29px;
+            .offers__item-title {
+                font-size: 2.4rem;
+            }
+        }
+        &:nth-child(3),
+        &:nth-child(6) {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        &-title {
+            font-weight: 500;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+        &-country,
+        &-time {
+            margin-bottom: 15px;
+        }
+        &-price {
+            font-weight: 700;
+            margin-top: auto;
+        }
     }
 }
 
