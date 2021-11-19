@@ -7,7 +7,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    &__inner{
+    &__inner {
         min-height: 100vh;
         position: relative;
         display: flex;
@@ -70,7 +70,7 @@
     &__title {
         font-weight: 700;
         text-align: center;
-        font-family: 'PT Serif', serif;
+        font-family: "PT Serif", serif;
         margin-bottom: auto;
     }
 
@@ -93,7 +93,20 @@
     &__arrow {
         bottom: 15px;
         left: 50%;
-        transform: translateX(-50%)
+        transform: translateX(-50%);
+    }
+}
+
+.country {
+    padding: 100px 0;
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 31px;
+    }
+
+    &__card {
+        max-width: 256px;
     }
 }
 
